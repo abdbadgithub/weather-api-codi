@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Search from "./components/Search";
-
+import Daily, { DailyW } from "./components/DailyWeather";
 import SayHi, { SayHello } from "./components/WeatherItem";
 import fakeWeatherData from "./fakeWeatherData.json";
 
@@ -10,20 +10,30 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: "Karim"
+      name: "Karim",
     };
   }
 
-  handleInputChange = value => {
+  handleInputChange = (value) => {
     this.setState({ name: value });
   };
 
   render() {
     return (
       <div className="app">
-        <SayHi />
-        <SayHello color="black" name={this.state.name} />
         <Search handleInput={this.handleInputChange} />
+
+        <SayHello />
+        <div class="daily_itmes">
+          <DailyW />
+          <DailyW />
+          <DailyW />
+
+          <DailyW />
+          <DailyW />
+          <DailyW />
+          <DailyW />
+        </div>
       </div>
     );
   }

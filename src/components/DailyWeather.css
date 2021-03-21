@@ -1,0 +1,13 @@
+.daily_item {
+  width: 13%;
+  text-align: center;
+  margin-top: 10%;
+}
+#img_daily {
+  width: 55%;
+  height: 55%;
+}
+
+.daily_item > p {
+  color: #030348;
+}

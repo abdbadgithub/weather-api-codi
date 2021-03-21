@@ -1,0 +1,27 @@
+.item {
+  text-align: center;
+}
+#status_weather {
+  color: #ffffff;
+  font-weight: bold;
+}
+.temp {
+  font-size: 20px;
+  color: #030348;
+  font-weight: bold;
+}
+#temperature {
+  font-weight: normal;
+}
+img {
+  width: 15%;
+  height: 15%;
+}
+.details_temp {
+  color: #030348;
+  font-size: 15px;
+  font-weight: bold;
+}
+.details_temp > span {
+  font-weight: normal;
+}
